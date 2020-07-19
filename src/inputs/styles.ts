@@ -14,6 +14,7 @@ export const Input = styled.input`
 	padding: 8px 4px;
 	outline: none;
 	border: none;
+	border-bottom: 4px solid ${({ theme }) => theme.primary[100]};
 `;
 
 export const ValidationError = styled.div`
