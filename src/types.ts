@@ -30,3 +30,13 @@ export interface Theme {
 	status: Status;
 	text: Text;
 }
+
+// Props
+
+export interface InputProps {
+	label?: string;
+	name?: string;
+	setValue: (value: string) => null;
+	validationError: string;
+	value: string;
+}
