@@ -16,7 +16,7 @@ export const text: Text = {
 		300: '#000000',
 		400: '#FFFFFF',
 		500: '#FFFFFF',
-		500: '#FFFFFF',
+		600: '#FFFFFF',
 	},
 };
 

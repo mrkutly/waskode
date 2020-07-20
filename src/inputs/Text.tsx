@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 import { InputProps } from '../types';
 import {
 	Label,
@@ -9,7 +9,7 @@ import {
 const TextInput = ({ label, name, setValue, validationError, value }: InputProps) => (
 	<div>
 		<Label htmlFor={name}>{label}</Label>
-		<Input type="text" name={name} id={name} value={value} onChange={(e) => setValue(e.target.value)} />
+		<Input type="text" name={name} id={name} value={value} onChange={(e: ChangeEvent<HTMLInputElement>) => setValue(e.target.value)} />
 		<ValidationError>{validationError}</ValidationError>
 	</div>
 );
