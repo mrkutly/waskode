@@ -1,36 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
 import { headerFont, paragraphFont, typography } from './typography';
+import { Theme } from '../types';
 
-// @ts-ignore
-import RobotoMono from '../fonts/RobotoMono.ttf';
-// @ts-ignore
-import Raleway from '../fonts/Raleway.ttf';
-// @ts-ignore
-import RalewayItalic from '../fonts/RalewayItalic.ttf';
-
-export const GlobalStyle = createGlobalStyle`
+export const createGlobalStyles = (theme: Theme) => createGlobalStyle`
 	${normalize()}
-
-	@font-face {
-		font-family: "RobotoMono";
-		font-display: fallback;
-		src: url(${RobotoMono}) format("truetype");
-	}
+	${theme.fontFace}
 	
-	@font-face {
-		font-family: "Raleway";
-		font-display: fallback;
-		src: url(${Raleway}) format("truetype");
-	}
-
-	@font-face {
-		font-family: "Raleway";
-		font-display: fallback;
-		font-style: italic;
-		src: url(${RalewayItalic}) format("truetype");
-	}
-
 	html {
 		font-size: ${typography.base};
 		box-sizing: border-box;

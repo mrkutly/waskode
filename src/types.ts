@@ -1,3 +1,5 @@
+import { FlattenSimpleInterpolation } from "styled-components";
+
 export interface BasePalette {
 	100: string;
 	200: string;
@@ -25,6 +27,7 @@ export interface Status {
 };
 
 export interface Theme {
+	fontFace: FlattenSimpleInterpolation;
 	neutral: NeutralPalette;
 	primary: ColorPalette;
 	status: Status;
