@@ -4,7 +4,6 @@ import { SmallButton, LargeButton, PrimaryButton, SecondaryButton, TertiaryButto
 import { EmailInput, TextInput, PasswordInput } from 'wasknode/dist/inputs';
 import { Form } from 'wasknode/dist/forms';
 import { defaultTheme } from 'wasknode/dist/themes';
-import "wasknode/dist/fonts/raleway.ttf"
 
 export default () => (
 	<>

@@ -1,4 +1,5 @@
-export const primaryFont = 'Raleway, sans-serif';
+export const headerFont = 'RobotoMono, monospaced';
+export const paragraphFont = 'Raleway, sans-serif';
 
 export const typography = {
 	base: '16px',
