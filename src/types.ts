@@ -13,10 +13,11 @@ export type ColorPalette = BasePalette & {
 
 export type NeutralPalette = ColorPalette & { 600: string; };
 
-export interface Text {
+export type Text = BasicText & { onPrimary: ColorPalette; };
+
+export interface BasicText {
 	default: string;
 	inverted: string;
-	onPrimary: ColorPalette;
 	onNeutral: NeutralPalette;
 }
 
@@ -24,7 +25,7 @@ export interface Status {
 	error: BasePalette;
 	success: BasePalette;
 	warning: BasePalette;
-};
+}
 
 export interface Theme {
 	fontFace: FlattenSimpleInterpolation;

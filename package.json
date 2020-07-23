@@ -8,8 +8,8 @@
 	"license": "MIT",
 	"private": false,
 	"scripts": {
-		"build": "cp -r src/assets/** dist/ && tsc",
-		"start": "cp -r src/assets/** dist/ && tsc --watch"
+		"build": "cp -r src/assets/ dist/ && tsc",
+		"start": "cp -r src/assets/ dist/ && tsc --watch"
 	},
 	"devDependencies": {
 		"@types/react": "^16.9.43",

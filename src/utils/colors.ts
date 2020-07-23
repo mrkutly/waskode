@@ -1,15 +1,8 @@
-import { Text, NeutralPalette, Status } from '../types';
+import { BasicText, NeutralPalette, Status } from '../types';
 
-export const text: Text = {
+export const text: BasicText = {
 	default: '#000000',
 	inverted: '#FFFFFF',
-	onPrimary: {
-		100: '#000000',
-		200: '#FFFFFF',
-		300: '#FFFFFF',
-		400: '#FFFFFF',
-		500: '#FFFFFF',
-	},
 	onNeutral: {
 		100: '#000000',
 		200: '#000000',

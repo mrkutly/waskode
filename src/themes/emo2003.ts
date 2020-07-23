@@ -30,28 +30,26 @@ const fontFace = css`
 `;
 
 const primary = {
-	100: '#80FFDB',
-	200: '#56CFE1',
-	300: '#4EA8DE',
-	400: '#5E60CE',
-	500: '#7400B8',
+	100: '#E66ED2',
+	200: '#F748DA',
+	300: '#6B045D',
+	400: '#170715',
+	500: '#080207',
 };
 
-const onPrimary = {
-	100: '#000000',
-	200: '#FFFFFF',
-	300: '#FFFFFF',
-	400: '#FFFFFF',
-	500: '#FFFFFF',
-};
-
-export const defaultTheme: Theme = {
+export const emo2003: Theme = {
 	fontFace,
 	neutral,
 	primary,
 	text: {
 		...text,
-		onPrimary,
+		onPrimary: {
+			100: '#000000',
+			200: '#FFFFFF',
+			300: '#FFFFFF',
+			400: '#FFFFFF',
+			500: '#FFFFFF',
+		}
 	},
 	status,
 };

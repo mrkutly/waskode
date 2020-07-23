@@ -30,28 +30,26 @@ const fontFace = css`
 `;
 
 const primary = {
-	100: '#80FFDB',
-	200: '#56CFE1',
-	300: '#4EA8DE',
-	400: '#5E60CE',
-	500: '#7400B8',
+	100: '#59ecd8',
+	200: '#92ffaa',
+	300: '#9fbdff',
+	400: '#198ac1',
+	500: '#080207',
 };
 
-const onPrimary = {
-	100: '#000000',
-	200: '#FFFFFF',
-	300: '#FFFFFF',
-	400: '#FFFFFF',
-	500: '#FFFFFF',
-};
-
-export const defaultTheme: Theme = {
+export const myVibe: Theme = {
 	fontFace,
 	neutral,
 	primary,
 	text: {
 		...text,
-		onPrimary,
+		onPrimary: {
+			100: '#000000',
+			200: '#000000',
+			300: '#FFFFFF',
+			400: '#FFFFFF',
+			500: '#FFFFFF',
+		}
 	},
 	status,
 };

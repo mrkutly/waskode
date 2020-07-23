@@ -1,16 +1,26 @@
 import React from "react"
-import { ThemeProvider, createGlobalStyles } from 'wasknode'
-import { SmallButton, LargeButton, PrimaryButton, SecondaryButton, TertiaryButton } from 'wasknode/dist/buttons'
-import { EmailInput, TextInput, PasswordInput } from 'wasknode/dist/inputs';
-import { Form } from 'wasknode/dist/forms';
-import { defaultTheme } from 'wasknode/dist/themes';
+import { 
+	createGlobalStyles,
+	myVibe,
+	EmailInput, 
+	Form,
+	LargeButton, 
+	Link,
+	PasswordInput,
+	PrimaryButton, 
+	SecondaryButton, 
+	SmallButton, 
+	TertiaryButton, 
+	TextInput, 
+	ThemeProvider, 
+} from 'wasknode'
 
-const GlobalStyle = createGlobalStyles(defaultTheme);
+const GlobalStyle = createGlobalStyles(myVibe);
 
 export default () => (
 	<>
 		<GlobalStyle />
-		<ThemeProvider theme={defaultTheme}>
+		<ThemeProvider theme={myVibe}>
 			<main>
 				<h1>My Components</h1>
 				<h2>Buttons</h2>
@@ -30,6 +40,7 @@ export default () => (
 					<PasswordInput value="hello@mark.com" setValue={() => {}} validationError="not a good password" />
 					<PrimaryButton>Sign up</PrimaryButton>
 				</Form>
+				<p><Link tabIndex={0} href="/">this is a link</Link> and this is not</p>
 			</main>
 		</ThemeProvider>
 	</>
