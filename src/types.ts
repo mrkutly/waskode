@@ -1,3 +1,4 @@
+import { ChangeEvent } from 'react';
 import { FlattenSimpleInterpolation } from "styled-components";
 
 export interface BasePalette {
@@ -47,10 +48,17 @@ export interface FontFace {
 
 // Props
 
-export interface InputProps {
+interface BaseInputProps {
 	label?: string;
 	name?: string;
-	setValue: (value: string) => null;
 	validationError: string;
 	value: string;
 }
+
+export type InputProps = BaseInputProps & {
+	onChange: (event: ChangeEvent<HTMLInputElement>) => null;
+};
+
+export type TextAreaProps = BaseInputProps & {
+	onChange: (event: ChangeEvent<HTMLTextAreaElement>) => null;
+};

@@ -17,6 +17,16 @@ export const Input = styled.input`
 	border-bottom: 4px solid ${({ theme }) => theme.primary[100]};
 `;
 
+export const TextAreaStyles = styled.textarea`
+	background: ${({ theme }) => theme.neutral[200]};
+	color: ${({ theme }) => theme.text.onNeutral[200]};
+	font-size: ${typography.paragraph};
+	padding: 8px 4px;
+	outline: none;
+	border: none;
+	border: 4px solid ${({ theme }) => theme.primary[100]};
+`;
+
 export const ValidationError = styled.div`
 	color: ${({ theme }) => theme.status.error[100]};
 	font-size: ${typography.helper};
