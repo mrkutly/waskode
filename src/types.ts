@@ -62,3 +62,8 @@ export type InputProps = BaseInputProps & {
 export type TextAreaProps = BaseInputProps & {
 	onChange: (event: ChangeEvent<HTMLTextAreaElement>) => void;
 };
+
+export type SelectProps = BaseInputProps & {
+	onChange: (event: ChangeEvent<HTMLSelectElement>, data?: any) => void;
+	options: { label: string; value: string; data?: any; }[];
+};

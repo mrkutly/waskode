@@ -1,6 +1,6 @@
 {
   "name": "waskode",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Mark Sauer-Utley component library",
   "main": "dist/index.js",
   "repository": "https://github.com/mrkutly/wasknode",
@@ -9,8 +9,7 @@
   "private": false,
   "scripts": {
     "build": "cp -r src/assets/ dist/ && tsc",
-    "start": "cp -r src/assets/ dist/ && tsc --watch",
-    "publish": "npm run build && npm publish"
+    "start": "cp -r src/assets/ dist/ && tsc --watch"
   },
   "devDependencies": {
     "@types/react": "^16.9.43",

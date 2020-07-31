@@ -9,7 +9,8 @@ import {
 	PasswordInput,
 	PrimaryButton, 
 	SecondaryButton, 
-	SmallButton, 
+	SmallButton,
+	Select,
 	TertiaryButton, 
 	TextInput, 
 	TextArea, 
@@ -43,6 +44,10 @@ export default () => (
 					<PrimaryButton>Sign up</PrimaryButton>
 				</Form>
 				<p><Link tabIndex={0} href="/">this is a link</Link> and this is not</p>
+				<Select onChange={(e, data) => console.log(data)} options={[
+					{ label: 'hello', value: 'hello', data: { this: "rules" } },
+					{ label: 'hello again', value: 'hello again', data: { hell: "yeah" } } 
+				]} />
 			</main>
 		</ThemeProvider>
 	</>

@@ -12,7 +12,15 @@ export const Input = styled.input`
 	color: ${({ theme }) => theme.text.onNeutral[200]};
 	font-size: ${typography.paragraph};
 	padding: 8px 4px;
-	outline: none;
+	border: none;
+	border-bottom: 4px solid ${({ theme }) => theme.primary[100]};
+`;
+
+export const SelectStyles = styled.select`
+	background: ${({ theme }) => theme.neutral[200]};
+	color: ${({ theme }) => theme.text.onNeutral[200]};
+	font-size: ${typography.paragraph};
+	padding: 8px 4px;
 	border: none;
 	border-bottom: 4px solid ${({ theme }) => theme.primary[100]};
 `;
@@ -22,7 +30,6 @@ export const TextAreaStyles = styled.textarea`
 	color: ${({ theme }) => theme.text.onNeutral[200]};
 	font-size: ${typography.paragraph};
 	padding: 8px 4px;
-	outline: none;
 	border: none;
 	border: 4px solid ${({ theme }) => theme.primary[100]};
 `;
