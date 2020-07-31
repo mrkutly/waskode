@@ -1,33 +1,10 @@
-import { css } from 'styled-components';
+import createFontface from '../utils/createFontFace';
 import { neutral, status, text } from '../utils/colors';
 import { Theme } from '../types';
-// @ts-ignore
-import RobotoMono from '../fonts/RobotoMono.ttf';
-// @ts-ignore
-import Raleway from '../fonts/Raleway.ttf';
-// @ts-ignore
-import RalewayItalic from '../fonts/RalewayItalic.ttf';
+import raleway from './fonts/raleway';
+import roboto from './fonts/roboto';
 
-const fontFace = css`
-	@font-face {
-		font-family: "RobotoMono";
-		font-display: fallback;
-		src: url(${RobotoMono}) format("truetype");
-	}
-	
-	@font-face {
-		font-family: "Raleway";
-		font-display: fallback;
-		src: url(${Raleway}) format("truetype");
-	}
-
-	@font-face {
-		font-family: "Raleway";
-		font-display: fallback;
-		font-style: italic;
-		src: url(${RalewayItalic}) format("truetype");
-	}
-`;
+const fontFace = createFontface([...roboto, ...raleway]);
 
 const primary = {
 	100: '#59ecd8',
@@ -39,7 +16,9 @@ const primary = {
 
 export const myVibe: Theme = {
 	fontFace,
+	headerFont: 'RobotoMono, monospaced',
 	neutral,
+	paragraphFont: 'Raleway, sans-serif',
 	primary,
 	text: {
 		...text,

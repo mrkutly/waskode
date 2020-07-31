@@ -1,7 +1,7 @@
 import React from "react"
 import { 
 	createGlobalStyles,
-	myVibe,
+	directions,
 	EmailInput, 
 	Form,
 	LargeButton, 
@@ -13,14 +13,14 @@ import {
 	TertiaryButton, 
 	TextInput, 
 	ThemeProvider, 
-} from 'wasknode'
+} from 'waskode'
 
-const GlobalStyle = createGlobalStyles(myVibe);
+const GlobalStyle = createGlobalStyles(directions);
 
 export default () => (
 	<>
 		<GlobalStyle />
-		<ThemeProvider theme={myVibe}>
+		<ThemeProvider theme={directions}>
 			<main>
 				<h1>My Components</h1>
 				<h2>Buttons</h2>

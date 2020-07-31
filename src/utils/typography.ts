@@ -1,6 +1,3 @@
-export const headerFont = 'RobotoMono, monospaced';
-export const paragraphFont = 'Raleway, sans-serif';
-
 export const typography = {
 	base: '16px',
 	h1: '3.052rem',

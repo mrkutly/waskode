@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
-import { headerFont, paragraphFont, typography } from './typography';
+import { typography } from './typography';
 import { Theme } from '../types';
 
 export const createGlobalStyles = (theme: Theme) => createGlobalStyle`
@@ -40,7 +40,7 @@ export const createGlobalStyles = (theme: Theme) => createGlobalStyle`
 	}
 
 	body {
-		font-family: ${paragraphFont};
+		font-family: ${theme.paragraphFont};
 	}
 	
 	main {
@@ -49,31 +49,31 @@ export const createGlobalStyles = (theme: Theme) => createGlobalStyle`
 	}
 
 	h1 {
-		font-family: ${headerFont};
+		font-family: ${theme.headerFont};
 		font-size: ${typography.h1};
 		font-weight: 300;
 	}
 	
 	h2 {
-		font-family: ${headerFont};
+		font-family: ${theme.headerFont};
 		font-size: ${typography.h2};
 		font-weight: 300;
 	}
 	
 	h3 {
-		font-family: ${headerFont};
+		font-family: ${theme.headerFont};
 		font-size: ${typography.h3};
 		font-weight: 300;
 	}
 	
 	h4 {
-		font-family: ${headerFont};
+		font-family: ${theme.headerFont};
 		font-size: ${typography.h4};
 		font-weight: 250;
 	}
 	
 	h5 {
-		font-family: ${headerFont};
+		font-family: ${theme.headerFont};
 		font-size: ${typography.h5};
 		font-weight: 250;
 	}

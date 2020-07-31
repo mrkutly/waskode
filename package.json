@@ -1,33 +1,33 @@
 {
-	"name": "wasknode",
-	"version": "1.0.0",
-	"description": "Mark Sauer-Utley component library",
-	"main": "dist/index.js",
-	"repository": "https://github.com/mrkutly/wasknode",
-	"author": "mrkutly",
-	"license": "MIT",
-	"private": false,
-	"scripts": {
-		"build": "cp -r src/assets/ dist/ && tsc",
-		"start": "cp -r src/assets/ dist/ && tsc --watch"
-	},
-	"devDependencies": {
-		"@types/react": "^16.9.43",
-		"@types/react-dom": "^16.9.8",
-		"@types/styled-components": "^5.1.1",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"rollup": "^2.22.1",
-		"rollup-plugin-copy": "^3.3.0",
-		"styled-components": "^5.1.1",
-		"typescript": "^3.9.7"
-	},
-	"peerDependencies": {
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"styled-components": "^5.1.1"
-	},
-	"dependencies": {
-		"polished": "^3.6.5"
-	}
+  "name": "waskode",
+  "version": "1.0.0",
+  "description": "Mark Sauer-Utley component library",
+  "main": "dist/index.js",
+  "repository": "https://github.com/mrkutly/wasknode",
+  "author": "mrkutly",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "cp -r src/assets/ dist/ && tsc",
+    "start": "cp -r src/assets/ dist/ && tsc --watch"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "@types/styled-components": "^5.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rollup": "^2.22.1",
+    "rollup-plugin-copy": "^3.3.0",
+    "styled-components": "^5.1.1",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "dependencies": {
+    "polished": "^3.6.5"
+  }
 }

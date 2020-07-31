@@ -29,10 +29,20 @@ export interface Status {
 
 export interface Theme {
 	fontFace: FlattenSimpleInterpolation;
+	headerFont: string;
 	neutral: NeutralPalette;
+	paragraphFont: string;
 	primary: ColorPalette;
 	status: Status;
 	text: Text;
+}
+
+export interface FontFace {
+	family: string;
+	weight: number;
+	style: string;
+	woff2: any;
+	woff: any;
 }
 
 // Props
