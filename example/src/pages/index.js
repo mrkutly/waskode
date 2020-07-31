@@ -12,6 +12,7 @@ import {
 	SmallButton, 
 	TertiaryButton, 
 	TextInput, 
+	TextArea, 
 	ThemeProvider, 
 } from 'waskode'
 
@@ -35,9 +36,10 @@ export default () => (
 				<h2>Form</h2>
 				<p>here is a form</p>
 				<Form>
-					<EmailInput value="hello@mark.com" setValue={() => {}} validationError="not a good email" />
-					<TextInput label="Name:" name="name" value="Mark Sauer-Utley" setValue={() => {}} validationError="not a good name" />
-					<PasswordInput value="hello@mark.com" setValue={() => {}} validationError="not a good password" />
+					<EmailInput value="hello@mark.com" onChange={() => {}} validationError="not a good email" />
+					<TextInput label="Name:" name="name" value="Mark Sauer-Utley" onChange={() => {}} validationError="not a good name" />
+					<PasswordInput value="hello@mark.com" onChange={() => { }} validationError="not a good password" />
+					<TextArea value="this is my sick text area isn't it nice?" onChange={() => { }} validationError="not a good password" />
 					<PrimaryButton>Sign up</PrimaryButton>
 				</Form>
 				<p><Link tabIndex={0} href="/">this is a link</Link> and this is not</p>
