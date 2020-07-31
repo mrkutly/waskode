@@ -1,6 +1,6 @@
 {
   "name": "waskode",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Mark Sauer-Utley component library",
   "main": "dist/index.js",
   "repository": "https://github.com/mrkutly/wasknode",

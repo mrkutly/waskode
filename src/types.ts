@@ -56,9 +56,9 @@ interface BaseInputProps {
 }
 
 export type InputProps = BaseInputProps & {
-	onChange: (event: ChangeEvent<HTMLInputElement>) => null;
+	onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
 export type TextAreaProps = BaseInputProps & {
-	onChange: (event: ChangeEvent<HTMLTextAreaElement>) => null;
+	onChange: (event: ChangeEvent<HTMLTextAreaElement>) => void;
 };
