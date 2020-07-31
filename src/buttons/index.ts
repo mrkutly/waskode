@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import { typography } from '../utils';
 
 const Button = styled.button`
-	cursor: pointer;
 	font-size: ${typography.paragraph};
 	padding: 8px 16px;
 	transition: all 0.1s ease;
 
 	&:enabled {
+		cursor: pointer;
+		
 		&:hover {
 			background: ${({ theme }) => theme.primary[200]};
 			border-color: transparent;
