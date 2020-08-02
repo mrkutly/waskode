@@ -1,4 +1,4 @@
-import { ChangeEvent } from 'react';
+import React, { ChangeEvent } from 'react';
 import { FlattenSimpleInterpolation } from "styled-components";
 
 export interface BasePalette {
@@ -7,14 +7,14 @@ export interface BasePalette {
 	300: string;
 }
 
-export type ColorPalette = BasePalette & {
+export interface ColorPalette extends BasePalette {
 	400: string;
 	500: string;
 };
 
-export type NeutralPalette = ColorPalette & { 600: string; };
+export interface NeutralPalette extends ColorPalette { 600: string; };
 
-export type Text = BasicText & { onPrimary: ColorPalette; };
+export interface Text extends BasicText { onPrimary: ColorPalette; };
 
 export interface BasicText {
 	default: string;
@@ -49,21 +49,15 @@ export interface FontFace {
 // Props
 
 interface BaseInputProps {
-	label?: string;
-	name?: string;
+	label: string;
 	validationError: string;
-	value: string;
 }
 
-export type InputProps = BaseInputProps & {
-	onChange: (event: ChangeEvent<HTMLInputElement>) => void;
-};
+export interface InputProps extends BaseInputProps, React.PropsWithoutRef<JSX.IntrinsicElements["input"]> { };
 
-export type TextAreaProps = BaseInputProps & {
-	onChange: (event: ChangeEvent<HTMLTextAreaElement>) => void;
-};
+export interface TextAreaProps extends BaseInputProps, React.PropsWithoutRef<JSX.IntrinsicElements["textarea"]> { };
 
-export type SelectProps = BaseInputProps & {
+export interface SelectProps extends BaseInputProps, React.PropsWithoutRef<JSX.IntrinsicElements["select"]> {
 	onChange: (event: ChangeEvent<HTMLSelectElement>, data?: any) => void;
 	options: { label: string; value: string; data?: any; }[];
 };

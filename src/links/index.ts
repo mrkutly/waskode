@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled, { css, AnyStyledComponent } from 'styled-components';
 
-export const Link = styled.a`
+const linkStyles = css`
 	color: ${({ theme }) => theme.text.default};
 	cursor: pointer;
 	text-decoration: none;
@@ -32,3 +32,8 @@ export const Link = styled.a`
 		color: ${({ theme }) => theme.neutral[500]};
 	}
 `;
+
+// for use with gatsby or react-router Links
+export const styleLink = <T>(linkComponent: T): T => styled(linkComponent as AnyStyledComponent)`${linkStyles}`;
+
+export const Link = styled.a`${linkStyles}`;

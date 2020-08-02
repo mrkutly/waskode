@@ -8,6 +8,7 @@ export const TextInput = ({
   onChange,
   validationError,
   value,
+  ...rest
 }: InputProps) => (
   <div>
     <Label htmlFor={name}>{label}</Label>
@@ -17,6 +18,7 @@ export const TextInput = ({
       id={name}
       value={value}
       onChange={onChange}
+      {...rest}
     />
     <ValidationError>{validationError}</ValidationError>
   </div>

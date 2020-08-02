@@ -8,10 +8,17 @@ export const TextArea = ({
   onChange,
   validationError,
   value,
+  ...rest
 }: TextAreaProps) => (
   <div>
     <Label htmlFor={name}>{label}</Label>
-    <TextAreaStyles name={name} id={name} value={value} onChange={onChange} />
+    <TextAreaStyles
+      name={name}
+      id={name}
+      value={value}
+      onChange={onChange}
+      {...rest}
+    />
     <ValidationError>{validationError}</ValidationError>
   </div>
 );

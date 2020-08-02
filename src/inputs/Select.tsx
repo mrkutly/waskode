@@ -9,6 +9,7 @@ export const Select = ({
   options,
   validationError,
   value,
+  ...rest
 }: SelectProps) => {
   const shouldUseData = options.some((opt) => !!opt.data);
 
@@ -25,7 +26,13 @@ export const Select = ({
   return (
     <div>
       <Label htmlFor={name}>{label}</Label>
-      <SelectStyles name={name} id={name} value={value} onChange={handleChange}>
+      <SelectStyles
+        name={name}
+        id={name}
+        value={value}
+        onChange={handleChange}
+        {...rest}
+      >
         <option />
         {options.map((option, idx) => (
           <option
