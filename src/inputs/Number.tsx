@@ -2,7 +2,7 @@ import React from "react";
 import { InputProps } from "../types";
 import { Label, Input, ValidationError } from "./styles";
 
-export const TextInput = ({
+export const NumberInput = ({
   label,
   name,
   onChange,
